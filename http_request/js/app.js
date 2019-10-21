@@ -4,12 +4,17 @@ var app = angular.module('ejemplosApp',[ ]);
 
 
 
-app.controller('mainCtrl', ['$scope','$http', function($scope,$http){
-  
-  
+app.controller('mainCtrl', ['$scope','$http', function($scope, $http){
+  $scope.profesores = {};
 
 
-  
+
+$http.get('json/profesores.json')
+//codigo cuando es correcta la peticion
+.success(function(data){
+  $scope.profesores = data.profesores;
+})
+
 
 
 

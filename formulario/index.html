@@ -87,19 +87,37 @@
   </li>
 </ul>
 </div><br>
-<div>
-  <input type="checkbox" ng-model="feliz">Feliz
 
+<div>
+  Cual es tu estado de animo el dia de hoy <br><br>
+  <input type="checkbox" ng-model="feliz">Feliz
   <select ng-show="feliz">
     <option value="genial">Genial</option>
     <option value="excelente">Excelente</option>
   </select>
-
   <input type="checkbox" ng-model="triste">Triste
-
   <select ng-show="triste">
     <option value="angustiado">Angustiado</option>
     <option value="deprimido">Deprimido</option>
+  </select>
+  <br><br>
+  Selecciona tu genero <br><br>
+  <input type="radio" name="genero" value="1" ng-model="hombre">Hombre {{hombre}}
+  <select ng-show="hombre==1">
+    <option value="macho">Macho</option>
+    <option value="Ay nomas">Ay nomas</option>
+  </select>
+  <br>
+  <input type="radio" name="genero" value="2" ng-model="mujer">Mujer {{mujer}}
+  <select ng-show="mujer==2">
+    <option value="luchona">Luchona</option>
+    <option value="hermosa">Hermosa</option>
+  </select>
+  <br>
+  <input type="radio" name="genero" value="3" ng-model="quimera">Quimera {{quimera}}
+  <select ng-show="quimera==3">
+    <option value="alienigena">Alienigena</option>
+    <option value="indefinido">Indefinido</option>
   </select>
 </div>
 

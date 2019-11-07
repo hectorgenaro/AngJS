@@ -85,11 +85,23 @@
       <p>{{muestra.space}}</p>
       <p>{{muestra.blackHole}}</p>
   </li>
-
-
 </ul>
+</div><br>
+<div>
+  <input type="checkbox" ng-model="feliz">Feliz
 
-   </div>
+  <select ng-show="feliz">
+    <option value="genial">Genial</option>
+    <option value="excelente">Excelente</option>
+  </select>
+
+  <input type="checkbox" ng-model="triste">Triste
+
+  <select ng-show="triste">
+    <option value="angustiado">Angustiado</option>
+    <option value="deprimido">Deprimido</option>
+  </select>
+</div>
 
   <script src="lib/angular.js"></script>
   <script src="bower_components/angular/angular.js"></script>

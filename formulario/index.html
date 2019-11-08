@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-  <script type="text/javascript" src="controller.js">
-
-  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="controller.js"></script>
+  <script type="text/javascript" src="ejemplo.js"></script>
   <link rel="shortcut icon" href="#" />
   <title ng-bind="respuesta"></title>
 </head>
 
 <body>
-  <div class="container"> Entiendes el contenido de este libro?
+  <div class="container">
+  <div> Entiendes el contenido de este libro?
     <input type="checkbox" ng-model="respuesta">
     <div ng-hide="respuesta">
       <h2>Me esforzare más!</h2>
@@ -24,11 +26,11 @@
     </div>
   </div>
 
-  <div class="container" ng-controller="miCtrl">
-    <h1 ng-bind="mensaje"> </h1>
+  <div ng-controller="miCtrl">
+    <h3 ng-bind="mensaje"> </h3>
   </div>
 
-  <div class="container">
+  <div>
     <div ng-controller="padreCtrl">
       <button ng-click="logPadre()">Padre</button><br><br>
       <div ng-controller="hijoCtrl">
@@ -76,7 +78,7 @@
       </li>
     </ul>
   </div>
-   <div class="container" ng-controller="otroControlador">
+   <div ng-controller="otroControlador">
 <button type="button" name="button" ng-model="cambia" ng-click="descubre()">click here</button>
 <ul ng-show="cambia">
 
@@ -120,9 +122,7 @@
     <option value="indefinido">Indefinido</option>
   </select>
 </div>
-
-  <script src="lib/angular.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
+</div>
 </body>
 
 </html>

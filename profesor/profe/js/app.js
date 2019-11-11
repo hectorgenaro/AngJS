@@ -3,7 +3,7 @@ app.controller('profesorCtrl', function($scope){
   $scope.profesor= profesorData;
   $scope.editando= {};
   $scope.editarProfesor= function () {
-    
+    angular.copy($scope.profesor, $scope.editando)
   }
 })
 

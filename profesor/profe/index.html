@@ -38,7 +38,7 @@
       <div class="col-sm-9">
         <section class="panel">
           <div class="panel-body">
-          {{profesor.bio}}
+            {{profesor.bio}}
             <br>
             <br>
             <strong>Edad:</strong> {{profesor.edad}} años
@@ -61,14 +61,15 @@
           </div>
           <div class="panel-body">
             Bio:
-          <textarea rows="9" class="form-control" ng-model="editando.bio"></textarea>
+            <textarea rows="9" class="form-control" ng-model="editando.bio"></textarea>
           </div>
           <br>
-          <button class ="btn btn-primary" ng-click="guardarCambios()">Guardar</button>
-          <button class ="btn btn-primary" ng-click="cancelarCambios()">Cancelar</button>
+          <button class="btn btn-primary" ng-click="guardarCambios()">Guardar</button>
+          <button class="btn btn-danger" ng-click="cancelarCambios()">Cancelar</button>
         </section>
       </div>
     </div>
   </div>
 </body>
+
 </html>

@@ -5,6 +5,12 @@ app.controller('profesorCtrl', function($scope){
   $scope.editarProfesor= function () {
     angular.copy($scope.profesor, $scope.editando)
   }
+  $scope.guardarCambios= function(){
+
+  }
+  $scope.cancelarCambios= function(){
+    $scope.editando={};
+  }
 })
 
 

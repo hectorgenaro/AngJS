@@ -28,9 +28,9 @@
             <br>
             Pais: {{clima.sys.country}}
             <br>
-            Amanece: {{clima.sys.sunrise | date: 'HH:mm:ss'}}
+            Amanece: {{clima.sys.sunrise | date: 'h:mm:ss a'}}
             <br>
-            Anochese: {{clima.sys.sunset | date: 'HH:mm:ss'}}
+            Anochese: {{clima.sys.sunset | date: 'h:mm:ss a'}}
             <br>
             Temperatura: {{kelvinCelsius(clima.main.temp)}}
 

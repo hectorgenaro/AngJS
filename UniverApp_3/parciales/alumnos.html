@@ -11,7 +11,7 @@
 		<tr ng-repeat="alumno in alumnos">
 			<td>{{alumno.codigo}} </td>
 			<td>{{alumno.nombre}} </td>
-			<td>{{alumno.telefono}} </td>
+			<td>{{alumno.telefono | telefono}} </td>
 		</tr>
 	</table>
 </div>

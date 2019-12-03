@@ -8,10 +8,11 @@
 			 <th>Nombre</th>
 			 <th>Telefono</th>
 		</tr>
-		<tr ng-repeat="alumno in alumnos">
+		<tr ng-repeat="alumno in alumnos | limitTo:5">
 			<td>{{alumno.codigo}} </td>
 			<td>{{alumno.nombre}} </td>
 			<td>{{alumno.telefono | telefono}} </td>
 		</tr>
-	</table>
-</div>
+	</table
+	<br>
+	</div>

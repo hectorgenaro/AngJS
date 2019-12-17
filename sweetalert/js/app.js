@@ -5,6 +5,7 @@ app.controller('mainCtrl', ['$scope', function($scope){
 $scope.mensaje = "Hola mundo!!"
 $scope.mensaje_titulo = "One line"
 $scope.mensaje_subtitulo = "This is another line"
+$scope.borradoMensaje = ""
 $scope.mostrar_alerta = function(){
 	Swal.fire($scope.mensaje);
 }
@@ -26,12 +27,14 @@ $scope.mostrar_confirmacion = function(){
 	  confirmButtonText: 'Yes, delete it!'
 	}).then((result) => {
 	  if (result.value) {
-	    Swal.fire(
+			$scope.borradoMensaje = "Tu mensaje ha sido borrado"
+			$scope.$apply()
+			 Swal.fire(
 	      'Deleted!',
 	      'Your file has been deleted.',
 	      'success'
 	    )
-	  }
+		}
 	})
 }
 

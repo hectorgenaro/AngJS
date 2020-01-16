@@ -1,6 +1,6 @@
 var app = angular.module('promesaApp.controladores', [])
-app.controller('perosnasCtrl', ['$scope', function($scope,){
+app.controller('personasCtrl', ['$scope', function($scope,){
 
-
+  $scope.personas = {};
 
 }])

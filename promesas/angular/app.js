@@ -1,1 +1,1 @@
-var app = angular.module('promesaApp', ['promesaApp.controladores', 'promesaApp.servicios']);
+var app = angular.module('promesaApp', ['promesaApp.controladores']);

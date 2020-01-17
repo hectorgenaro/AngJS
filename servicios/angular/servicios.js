@@ -10,9 +10,11 @@ app.factory('Personas', ['$http', '$q', function ($http, $q){
     self.cargando = true;
     var q = $q.defer();
     $http.jsonp("http://www.json-generator.com/api/json/get/cflPmSUZMy?callback=JSON_CALLBACK")
-      .then(function success(data){
+      .then(function success(respuesta){
+        self.data = respuesta.data;
+        self.cargando = false;  
         console.log ("todo bien")
-        console.log(data)
+        console.log(respuesta)
       },
     function error(response){
       console.log("algo salio mal")

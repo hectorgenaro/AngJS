@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="promesaApp">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,14 @@
   <script src="angular/app.js"></script>
   <title>Servicios</title>
 </head>
+
 <body>
-<div class="container" ng-controller="personasCtrl">
-  <h1>Servicios</h1>
-  <hr>
-  <label class="label label-primary" ng-show = "personas.cargando">Cargando datos...</label>
-  <pre>{{personas | json}}</pre>
-</div>
+  <div class="container" ng-controller="personasCtrl">
+    <h1>Servicios</h1>
+    <hr>
+    <label class="label label-primary" ng-show="personas.cargando">Cargando datos...</label>
+    <pre>{{personas | json}}</pre>
+  </div>
 </body>
+
 </html>

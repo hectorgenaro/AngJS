@@ -13,15 +13,18 @@
 	<script src="angular/app.js"></script>
 	<script src="angular/servicios.js"></script>
 	<script src="angular/controladores.js"></script>
-	
+
 
 </head>
 <body>
-	
+
 	<div class="container" ng-controller="observadorCtrl">
-		
-		<h1>Watch <small>cambios de las variables</small></h1>	
+
+		<h1>Watch <small>cambios de las variables</small></h1>
 		<hr>
+
+		<label> {{nombre}}</label>
+		<input type="text" class="form-control" ng-model="nombre">
 
 
 

@@ -25,5 +25,15 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
     }
   })
 
+	$scope.ciudad_valid = false;
+  $scope.$watch('ciudad', function(nuevo, anterior) {
+    if (!nuevo) return;
+    if (nuevo.length < 8) {
+      $scope.ciudad_valid = true;
+    } else {
+      $scope.ciudad_valid = false;
+    }
+  })
+
 
 }]);

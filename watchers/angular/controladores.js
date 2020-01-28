@@ -36,7 +36,7 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
   })
 
   $scope.telefono_valid = false;
-  $scope.$watch('ciudad', function(nuevo, anterior) {
+  $scope.$watch('telefono', function(nuevo, anterior) {
     if (!nuevo) return;
     if (nuevo.length < 10) {
       $scope.telefono_valid = true;

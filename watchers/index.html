@@ -21,6 +21,7 @@
 	<div class="container" ng-controller="observadorCtrl">
 		<h1>Watch <small>cambios de las variables</small></h1>
 		<hr>
+		<div class="col-sm-6">
 		<p>Nombre</p>
 		<input type="nombre" class="form-control" ng-model="nombre">
 		<p ng-show="nomIncop" style="font-size:10px; color:red;">El nombre debe ser de minimo 5 caracteres</p>
@@ -33,6 +34,7 @@
 		<input type="ciudad" class="form-control" ng-model="ciudad">
 		<p ng-show="ciudad_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 8 caracteres</p>
 	</div>
+</div>
 
 </body>
 

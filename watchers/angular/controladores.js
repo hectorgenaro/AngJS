@@ -44,6 +44,15 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
       $scope.telefono_valid = false;
     }
   })
+  $scope.rfc_valid = false;
+  $scope.$watch('rfc', function(nuevo, anterior) {
+    if (!nuevo) return;
+    if (nuevo.length < 13) {
+      $scope.rfc_valid = true;
+    } else {
+      $scope.rfc_valid = false;
+    }
+  })
 
 
 }]);

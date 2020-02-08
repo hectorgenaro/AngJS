@@ -53,6 +53,15 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
       $scope.rfc_valid = false;
     }
   })
+  $scope.Ocupacion_valid = false;
+  $scope.$watch('rfc', function(nuevo, anterior) {
+    if (!nuevo) return;
+    if (nuevo.length < 13) {
+      $scope.Ocupacion_valid = true;
+    } else {
+      $scope.Ocupacion_valid = false;
+    }
+  })
 
 
 }]);

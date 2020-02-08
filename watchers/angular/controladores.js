@@ -54,9 +54,9 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
     }
   })
   $scope.Ocupacion_valid = false;
-  $scope.$watch('rfc', function(nuevo, anterior) {
+  $scope.$watch('Ocupacion', function(nuevo, anterior) {
     if (!nuevo) return;
-    if (nuevo.length < 13) {
+    if (nuevo.length < 10) {
       $scope.Ocupacion_valid = true;
     } else {
       $scope.Ocupacion_valid = false;

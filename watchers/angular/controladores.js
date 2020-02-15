@@ -71,6 +71,15 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
       $scope.Referencia_valid = false;
     }
   })
+  $scope.Escolaridad_valid = false;
+  $scope.$watch('Escolaridad', function(nuevo, anterior) {
+    if (!nuevo) return;
+    if (nuevo.length < 7) {
+      $scope.Escolaridad_valid = true;
+    } else {
+      $scope.Escolaridad_valid = false;
+    }
+  })
 
 
 }]);

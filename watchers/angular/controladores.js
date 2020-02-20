@@ -15,13 +15,13 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
     // console.log(valorNuevo, valorViejo)
   })
 
-  $scope.curp_valid = false;
-  $scope.$watch('curp', function(nuevo, anterior) {
+  $scope.Edad_valid = false;
+  $scope.$watch('Edad', function(nuevo, anterior) {
     if (!nuevo) return;
-    if (nuevo.length < 16) {
-      $scope.curp_valid = true;
+    if (nuevo.length < 2) {
+      $scope.Edad_valid = true;
     } else {
-      $scope.curp_valid = false;
+      $scope.Edad_valid = false;
     }
   })
 

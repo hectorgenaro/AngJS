@@ -26,6 +26,10 @@
 		<input type="nombre" class="form-control" ng-model="nombre">
 		<p ng-show="nomIncop" style="font-size:10px; color:red;">El nombre debe ser de minimo 5 caracteres</p>
 		<br>
+		<p>Telefono</p>
+		<input type="telefono" class="form-control" ng-model="telefono">
+		<p ng-show="telefono_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 10 caracteres</p>
+		<br>
 		<p>CURP</p>
 		<input type="curp" class="form-control" ng-model="curp">
 		<p ng-show="curp_valid" style="font-size:10px; color:red;">El CURP debe contener minimo 16 caracteres</p>
@@ -33,10 +37,6 @@
 		<p>Ciudad</p>
 		<input type="ciudad" class="form-control" ng-model="ciudad">
 		<p ng-show="ciudad_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 8 caracteres</p>
-		<br>
-		<p>Telefono</p>
-		<input type="telefono" class="form-control" ng-model="telefono">
-		<p ng-show="telefono_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 10 caracteres</p>
 		<br>
 		<p>RFC</p>
 		<input type="rfc" class="form-control" ng-model="rfc">

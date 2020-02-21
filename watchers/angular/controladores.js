@@ -80,15 +80,7 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
       $scope.Escolaridad_valid = false;
     }
   })
-  // $scope.Homoclave_valid = false;
-  // $scope.$watch('Homoclave', function(nuevo, anterior) {
-  //   if (!nuevo) return;
-  //   if (nuevo.length < 7) {
-  //     $scope.Homoclave_valid = true;
-  //   } else {
-  //     $scope.Homoclave_valid = false;
-  //   }
-  // })
+
 
 
 }]);

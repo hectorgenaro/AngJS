@@ -62,15 +62,15 @@ app.controller('observadorCtrl', ['$scope', function($scope) {
       $scope.Ocupacion_valid = false;
     }
   })
-  // $scope.Referencia_valid = false;
-  // $scope.$watch('Referencia', function(nuevo, anterior) {
-  //   if (!nuevo) return;
-  //   if (nuevo.length < 7) {
-  //     $scope.Referencia_valid = true;
-  //   } else {
-  //     $scope.Referencia_valid = false;
-  //   }
-  // })
+  $scope.Referencia_valid = false;
+  $scope.$watch('Referencia', function(nuevo, anterior) {
+    if (!nuevo) return;
+    if (nuevo.length < 7) {
+      $scope.Referencia_valid = true;
+    } else {
+      $scope.Referencia_valid = false;
+    }
+  })
   $scope.Escolaridad_valid = false;
   $scope.$watch('Escolaridad', function(nuevo, anterior) {
     if (!nuevo) return;

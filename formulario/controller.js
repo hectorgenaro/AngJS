@@ -63,6 +63,7 @@ angular.module('app', [])
     $scope.inserta= function (){
     $scope.comentarios.push($scope.comentarioNew)
     $scope.comentarioNew={}
+    console.log($scope.comentarios)
     }
     $scope.limpiaTabla= function(){
       $scope.comentarios=[]

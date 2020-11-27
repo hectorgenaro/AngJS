@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="paginacionApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>$scope $watch</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<script src="js/lib/angular.min.js"></script>
+
+	<script src="angular/app.js"></script>
+	<script src="angular/servicios.js"></script>
+	<script src="angular/controladores.js"></script>
+</head>
+
+<body>
+
+	<div class="container" ng-controller="observadorCtrl">
+		<h1>Watch <small>cambios de las variables</small></h1>
+		<hr>
+		<div class="col-sm-6">
+		<p>Nombre</p>
+		<input type="nombre" class="form-control" ng-model="nombre">
+		<p ng-show="nomIncop" style="font-size:10px; color:red;">El nombre debe ser de minimo 5 caracteres</p>
+		<br>
+		<p>Edad</p>
+		<input type="Edad" class="form-control" ng-model="Edad">
+		<p ng-show="Edad_valid" style="font-size:10px; color:red;">El CURP debe contener minimo 2 caracteres</p>
+		<br>
+		<p>Telefono</p>
+		<input type="telefono" class="form-control" ng-model="telefono">
+		<p ng-show="telefono_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 10 caracteres</p>
+		<br>
+		<p>Escolaridad</p>
+		<input type="Escolaridad" class="form-control" ng-model="Escolaridad">
+		<p ng-show="Escolaridad_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 7 caracteres</p>
+		<br>
+		<p>Ciudad</p>
+		<input type="ciudad" class="form-control" ng-model="ciudad">
+		<p ng-show="ciudad_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 8 caracteres</p>
+		<br>
+		<p>RFC</p>
+		<input type="rfc" class="form-control" ng-model="rfc">
+		<p ng-show="rfc_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 10 caracteres</p>
+		<br>
+		<!-- <p>Ocupacion</p>
+		<input type="Ocupacion" class="form-control" ng-model="Ocupacion">
+		<p ng-show="Ocupacion_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 10 caracteres</p>
+		<br> -->
+		<p>Referencia</p>
+		<input type="Referencia" class="form-control" ng-model="Referencia">
+		<p ng-show="Referencia_valid" style="font-size:10px; color:red;">Este campo debe contener minimo 7 caracteres</p>
+		<br>
+</div>
+
+</body>
+
+</html>

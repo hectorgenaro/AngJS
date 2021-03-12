@@ -15,7 +15,7 @@ app.factory('Personas', ['$http', '$q', '$rootScope', function($http, $q, $rootS
           q.resolve(respuesta.data)
         },
         function error(response) {
-          console.log("algo salio mal")
+          console.log("algo inesperado ocurrio")
           q.reject("error al cargar")
         })
     return q.promise
